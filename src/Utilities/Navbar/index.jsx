@@ -19,10 +19,10 @@ const Navbar = () => {
 
                 {/* Menu untuk Desktop */}
                 <div className="hidden md:flex gap-10">
-                    <a href="#" className="hover:text-[#939AFF]">Beranda</a>
-                    <a href="#" className="hover:text-[#939AFF]">Tentang</a>
-                    <a href="#" className="hover:text-[#939AFF]">Project</a>
-                    <a href="#" className="hover:text-[#939AFF]">Contact</a>
+                    <a href="#section1" className="hover:text-[#939AFF]">Beranda</a>
+                    <a href="#section2" className="hover:text-[#939AFF]">Tentang</a>
+                    <a href="#section3" className="hover:text-[#939AFF]">Project</a>
+                    <a href="#section4" className="hover:text-[#939AFF]">Contact</a>
                 </div>
             </div>
 

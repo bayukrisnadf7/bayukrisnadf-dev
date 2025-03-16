@@ -28,7 +28,7 @@ const Section2 = () => {
   ];
   const [activeTab, setActiveTab] = useState("sertifikat"); // Default "sertifikat"
   return (
-    <div className="w-full min-h-screen bg-black text-white">
+    <div id="section2" className="w-full min-h-screen bg-black text-white">
       <p className="text-[#7EE787] md:text-3xl text-2xl text-center font-bold relative top-10">
         Tentang
       </p>

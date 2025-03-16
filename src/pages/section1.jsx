@@ -14,7 +14,7 @@ const Section1 = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="relative md:mx-10 mx-5">
+    <div id="section1" className="relative md:mx-10 mx-5">
       {/* Gambar pertama dengan efek floating */}
       <img
         src="img/section1-1.png"
@@ -46,23 +46,43 @@ const Section1 = () => {
           website yang responsif, interaktif, dan berfungsi dengan baik.
         </p>
         <div className="flex gap-5">
-          <button className="bg-[#939AFF] text-white flex justify-center font-bold px-5 py-2 rounded-xl md:w-[150px] w-[150px]">
+          <a
+            href="#section3"
+            className="bg-[#939AFF] text-white flex justify-center font-bold px-5 py-2 rounded-xl md:w-[150px] w-[150px] cursor-pointer"
+          >
             Portofolio
-          </button>
-          <button className="bg-[#939AFF] text-white flex justify-center font-bold px-5 py-2 rounded-xl md:w-[150px] w-[150px]">
+          </a>
+
+          <a href="#section4" className="bg-[#939AFF] text-white flex justify-center font-bold px-5 py-2 rounded-xl md:w-[150px] w-[150px]">
             Contact Me
-          </button>
+          </a>
         </div>
         <hr />
       </div>
       <div className="flex md:gap-5 gap-2 absolute md:p-20 md:mt-[490px] mt-[410px]">
-        <button>
+        <button
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/bayu-krisna-dwihadi-fahrizal/",
+              "_blank"
+            )
+          }
+        >
           <FaLinkedinIn className="text-black bg-white p-2 rounded-xl w-10 h-10 sm:w-8 sm:h-8 md:w-12 md:h-12" />
         </button>
-        <button>
+
+        <button
+          onClick={() =>
+            window.open("https://github.com/bayukrisnadf7", "_blank")
+          }
+        >
           <FaGithub className="text-black bg-white p-2 rounded-xl w-10 h-10 sm:w-8 sm:h-8 md:w-12 md:h-12" />
         </button>
-        <button>
+        <button
+          onClick={() =>
+            window.open("https://instagram.com/bayukrisnadf_", "_blank")
+          }
+        >
           <FaInstagram className="text-black bg-white p-2 rounded-xl w-10 h-10 sm:w-8 sm:h-8 md:w-12 md:h-12" />
         </button>
       </div>
