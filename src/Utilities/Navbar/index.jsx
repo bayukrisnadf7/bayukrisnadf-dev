@@ -23,6 +23,7 @@ const Navbar = () => {
                     <a href="#section2" className="hover:text-[#939AFF]">Tentang</a>
                     <a href="#section3" className="hover:text-[#939AFF]">Project</a>
                     <a href="#section4" className="hover:text-[#939AFF]">Contact</a>
+                    <a href="#section4" className="hover:text-[#939AFF]">Blogs</a>
                 </div>
             </div>
 
