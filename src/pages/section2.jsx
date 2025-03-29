@@ -26,7 +26,7 @@ const Section2 = () => {
     { component: <RiTailwindCssFill size={40} />, key: "tailwind" },
     { component: <DiMysql size={40} />, key: "mysql" },
   ];
-  const [activeTab, setActiveTab] = useState("sertifikat"); // Default "sertifikat"
+  const [activeTab, setActiveTab] = useState("techstack"); // Default "sertifikat"
   return (
     <div id="section2" className="w-full min-h-screen bg-black text-white">
       <p className="text-[#7EE787] md:text-3xl text-2xl text-center font-bold relative top-10">
@@ -37,12 +37,12 @@ const Section2 = () => {
           className="
         text-[#7EE787]"
         >
-          Saya adalah mahasiswa Teknik Informatika yang memiliki minat
-          besar dalam mengembangkan website dan aplikasi berbasis web. Selama
-          masa studi, saya telah mempelajari berbagai konsep pemrograman, desain
-          sistem, dan pengembangan perangkat lunak, serta
+          Saya adalah mahasiswa Teknik Informatika yang memiliki minat besar
+          dalam mengembangkan website dan aplikasi berbasis web. Selama masa
+          studi, saya telah mempelajari berbagai konsep pemrograman, desain
+          sistem, dan pengembangan perangkat lunak,
         </span>{" "}
-        mengasah keterampilan teknis saya melalui proyek-proyek pribadi dan
+        serta mengasah keterampilan teknis saya melalui proyek-proyek pribadi dan
         tugas kuliah. Saya senang mengeksplorasi teknologi terbaru dan selalu
         berusaha untuk meningkatkan kemampuan saya dalam pengembangan web.
       </p>
@@ -52,19 +52,19 @@ const Section2 = () => {
         <div className="flex justify-center gap-4 mb-5">
           <button
             className={`px-4 py-2 rounded-lg text-white ${
-              activeTab === "sertifikat" ? "bg-[#939AFF]" : "bg-gray-600"
-            }`}
-            onClick={() => setActiveTab("sertifikat")}
-          >
-            Sertifikat
-          </button>
-          <button
-            className={`px-4 py-2 rounded-lg text-white ${
               activeTab === "techstack" ? "bg-[#939AFF]" : "bg-gray-600"
             }`}
             onClick={() => setActiveTab("techstack")}
           >
             Tech Stack
+          </button>
+          <button
+            className={`px-4 py-2 rounded-lg text-white ${
+              activeTab === "sertifikat" ? "bg-[#939AFF]" : "bg-gray-600"
+            }`}
+            onClick={() => setActiveTab("sertifikat")}
+          >
+            Sertifikat
           </button>
         </div>
 
@@ -72,9 +72,6 @@ const Section2 = () => {
         <div className=" text-white md:p-6 p-1 rounded-lg shadow-lg md:mx-20 mx-5">
           {activeTab === "sertifikat" ? (
             <div className="">
-              <h2 className="text-2xl font-bold mb-3 text-center">
-                Sertifikat
-              </h2>
               <div className="grid md:grid-cols-3 grid-cols-1 gap-5 place-items-center">
                 <motion.div
                   className="border flex flex-col gap-2 p-3 rounded-xl md:min-h-[370px] min-h-[200px]"
@@ -128,9 +125,6 @@ const Section2 = () => {
             </div>
           ) : (
             <div>
-              <h2 className="text-2xl font-bold mb-3 text-center">
-                Tech Stack
-              </h2>
               <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-10 place-items-center mt-10">
                 {icons.map(({ component, key }, index) => (
                   <motion.div
