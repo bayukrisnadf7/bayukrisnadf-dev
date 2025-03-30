@@ -7,20 +7,22 @@ import Navbar from './Utilities/Navbar'
 import Section2 from './pages/section2'
 import Section3 from './pages/section3'
 import Section4 from './pages/section4'
-
+import Footer from './Utilities/Footer'
 function App() {
-  const [count, setCount] = useState(0)
+
   return (
     <>
-    <div className="bg-black w-full min-h-screen font-poppins">
-      <div className='relative top-5'>
-      <Navbar/>
+      <div className="bg-black w-full min-h-screen font-poppins">
+        <div className='relative top-5'>
+          <Navbar />
+        </div>
+        <Section1 />
       </div>
-      <Section1 />
-    </div>
-      <Section2/>
-      <Section3/>
-      <Section4/>
+
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Footer/>
     </>
   )
 }

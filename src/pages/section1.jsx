@@ -53,7 +53,12 @@ const Section1 = () => {
             Portofolio
           </a>
 
-          <a href="#section4" className="bg-[#939AFF] text-white flex justify-center font-bold px-5 py-2 rounded-xl md:w-[150px] w-[150px]">
+          <a
+            href="https://wa.me/62895399757207"
+            className="bg-[#939AFF] text-white flex justify-center font-bold px-5 py-2 rounded-xl md:w-[150px] w-[150px]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Contact Me
           </a>
         </div>

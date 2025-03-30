@@ -12,7 +12,8 @@ import {
 } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { DiMysql } from "react-icons/di";
-
+import GradientText from "../Animation/GradientText";
+import TrueFocus from "../Animation/TrueFocus";
 const Section2 = () => {
   const icons = [
     { component: <FaHtml5 size={40} />, key: "html" },
@@ -29,23 +30,33 @@ const Section2 = () => {
   const [activeTab, setActiveTab] = useState("techstack"); // Default "sertifikat"
   return (
     <div id="section2" className="w-full min-h-screen bg-black text-white">
-      <p className="text-[#7EE787] md:text-3xl text-2xl text-center font-bold relative top-10">
-        Tentang
-      </p>
-      <p className="md:text-xl text-sm text-center font-bold relative top-20 md:mx-20 mx-5 text-white">
-        <span
-          className="
-        text-[#7EE787]"
+      <div></div>
+      <div className="text-white md:text-3xl text-2xl text-center font-bold relative top-10">
+        <TrueFocus
+          sentence="Tentang Saya"
+          manualMode={false}
+          blurAmount={5}
+          borderColor="red"
+          animationDuration={2}
+          pauseBetweenAnimations={1}
+        />
+      </div>
+      <div className="md:text-xl text-sm text-center font-bold relative top-[70px] md:mx-20 mx-5 text-white">
+        <GradientText
+          colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+          animationSpeed={3}
+          showBorder={false}
+          className="custom-class"
         >
           Saya adalah mahasiswa Teknik Informatika yang memiliki minat besar
           dalam mengembangkan website dan aplikasi berbasis web. Selama masa
           studi, saya telah mempelajari berbagai konsep pemrograman, desain
-          sistem, dan pengembangan perangkat lunak,
-        </span>{" "}
-        serta mengasah keterampilan teknis saya melalui proyek-proyek pribadi dan
-        tugas kuliah. Saya senang mengeksplorasi teknologi terbaru dan selalu
-        berusaha untuk meningkatkan kemampuan saya dalam pengembangan web.
-      </p>
+          sistem, dan pengembangan perangkat lunak, serta mengasah keterampilan
+          teknis saya melalui proyek-proyek pribadi dan tugas kuliah. Saya
+          senang mengeksplorasi teknologi terbaru dan selalu berusaha untuk
+          meningkatkan kemampuan saya dalam pengembangan web.
+        </GradientText>
+      </div>
 
       <div className="mt-28 p-5">
         {/* Menu Tab */}
